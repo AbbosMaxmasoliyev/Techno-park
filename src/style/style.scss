@@ -586,5 +586,35 @@ overflow-x: hidden;
     }
 }
 
+.google
+{
+    width: 100%;
+    min-height: 500px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+
+   &>div{
+        display: flex;
+        justify-content: space-between;
+        &>iframe
+        {
+            border-radius: 10px;
+        }
+   }
+   &>.title{
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 75px;
+    letter-spacing: 0.045em;
+
+    color: #FFFFFF;
+   }
+}
+
 
 

@@ -13,6 +13,7 @@ import Partners from '../components/partners'
 import MyForm from '../components/form'
 import Form from '../components/form'
 import main from "../components/main"
+import Google from '../components/google'
 
 const Home = () => {
 
@@ -38,6 +39,8 @@ const Home = () => {
       {/* <Form/> */}
       <script src={main}></script>
       {/* salom */}
+      {/* salom */}
+      <Google/>
     </div>
   )
 }
