@@ -37,6 +37,7 @@ const Home = () => {
       <img src={odam} alt="" width={"90%"} style={{ alignSelf:"center", margin:"2% 0"}}/>
       {/* <Form/> */}
       <script src={main}></script>
+      {/* salom */}
     </div>
   )
 }
