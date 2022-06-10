@@ -1,34 +1,34 @@
-import { Outlet, Link } from "react-router-dom";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-//images
+// images
 import Logo from "./images/logo/logo.png"
 
-const Layout = () => {
-  return (
-    <div className="Navbar">
-        <div className="block">
-        <div className="logo">
-            <img src={Logo} alt="" />
-        </div>
-      <nav className="links">
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/blogs">Blogs</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-      </nav>
-        </div>
 
-      <Outlet />
-    </div>
-          
-  )
-};
+class Navbar extends Component {
 
-export default Layout;
+	componentDidMount() {
+			
+        }
+	
+	
+    render() {
+        return (
+            <div className='Navbar'>
+              <div className="logo">
+                <img src={Logo} alt="" />
+              </div>
+              <div className="links">
+              <Link to={'/'} className="dez-page site-button primary">Biz haqimizda</Link>
+              <Link to={'/courses'} className="dez-page site-button primary">Kurslarimiz</Link>
+              <Link to={'/services'} className="dez-page site-button primary">Xizmatlariumiz</Link>
+              <Link to={'/news'} className="dez-page site-button primary">Yangiliklar</Link>
+              <Link to={'/contact'} className="dez-page site-button primary">Yangiliklar</Link>
+              </div>
+            </div >
+        )
+    }
+}
+
+	
+export default Navbar;

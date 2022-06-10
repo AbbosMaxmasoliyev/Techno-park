@@ -14,11 +14,14 @@ import MyForm from '../components/form'
 import Form from '../components/form'
 import main from "../components/main"
 import Google from '../components/google'
+import Footer from '../components/footer'
+import Navbar from '../Navbar'
 
 const Home = () => {
 
   return (
     <div className='home'>
+      <Navbar/>
       <Banner/>
       <Activity/>
       <Carousel1/>
@@ -41,6 +44,7 @@ const Home = () => {
       {/* salom */}
       {/* salom */}
       <Google/>
+      <Footer/>
     </div>
   )
 }
