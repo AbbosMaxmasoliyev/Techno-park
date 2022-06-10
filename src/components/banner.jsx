@@ -7,6 +7,8 @@ import texno2 from "../images/png/texno2.png"
 import shar1 from "../images/png/ellips.png" 
 import sfera from "../images/png/sfera.png" 
 
+// bnma
+
 const Banner = () => {
   return (
     <div className='banner'>
