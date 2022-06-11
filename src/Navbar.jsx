@@ -21,7 +21,7 @@ class Navbar extends Component {
               <div className="links">
               <Link to={'/'} className="dez-page site-button primary">Biz haqimizda</Link>
               <Link to={'/courses'} className="dez-page site-button primary">Kurslarimiz</Link>
-              <Link to={'/services'} className="dez-page site-button primary">Xizmatlariumiz</Link>
+              <Link to={'/services'} className="dez-page site-button primary">Xizmatlarimiz</Link>
               <Link to={'/news'} className="dez-page site-button primary">Yangiliklar</Link>
               <Link to={'/contact'} className="dez-page site-button primary">Yangiliklar</Link>
               </div>

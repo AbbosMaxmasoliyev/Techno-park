@@ -1,18 +1,12 @@
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./Navbar";
-import Home from "./pages/home";
+import Markup from "./markup";
 import "./style/style.scss"
 
 export default function Index() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />}>
-          <Route index element={<Home />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <div className="index">
+      <Markup/>
+    </div>
   );
 }
 

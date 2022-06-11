@@ -4,7 +4,16 @@
     margin: 0;
 }
 
-
+@keyframes animate1 {
+    0%{
+        transform: rotateZ(0);
+    }50%{
+        transform: rotateZ(180deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
 
 
 body{
@@ -21,6 +30,11 @@ overflow-x: hidden;
 @font-face {
     font-family: Righteous;
     src: url(./fonts/Righteous/Righteous-Regular.ttf);
+}
+
+@font-face {
+    font-family : Manrope;
+    src: url(./fonts/Manrope/static/Manrope-Regular.ttf);
 }
 
 .Navbar
@@ -60,11 +74,12 @@ overflow-x: hidden;
 }
 
 
-#root
+.index
 {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .home
@@ -75,7 +90,6 @@ overflow-x: hidden;
     justify-content: center;
     flex-direction: column;
 
-    align-self: center;
 
     &>.banner
     {
@@ -661,5 +675,102 @@ overflow-x: hidden;
     }
 }
 
+.services
+{
+    width: 66.6%;
+
+
+}
+
+
+.banner2
+{
+    width: 100%;
+    height: 900px;
+    display: flex;
+
+    &>.left
+    {
+        width: 50%;
+        float: left;
+        &>ul{
+            width: 100%;
+            list-style: none;
+            &>li{
+                width: 100%;
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 32.7576px;
+                line-height: 45px;
+                display: flex;
+                align-items: center;
+
+                color: #FFFFFF;
+            }
+        }  
+    }
+    &>.right
+    {
+        width: 60%;
+        height: auto;
+        display: flex;
+        float: right;
+
+        &>.rightblock{
+            width: 100%;
+            &>.rasm
+                {
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                    &>img{
+                        position: absolute;
+                    }
+
+                    &>.rasm{
+                        align-self: center;
+                    }
+                    &>.aylanadigan{
+                        width: 310px;
+                        margin-top: -10px;
+                        right: 27.5%;
+                        animation: animate1 infinite 5s linear;
+                    }
+                }
+        }
+    }
+
+}
+
+.neon_button
+{
+    height: 54px;
+    margin: 30px 0;
+    border: 3.13px solid #678ff3 ;
+    text-align: center;
+    color: #fff;
+    border-radius: 17.7204px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 28.14412498474121px 0px rgba(51, 90, 251, 1);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24.1017px;
+    line-height: 41px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+    padding: 0 10px;
+
+    color: #FFFFFF;
+
+
+}
 
 

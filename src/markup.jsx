@@ -1,25 +1,21 @@
-import React, {Component} from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Service from './components/service';
-import Home from './pages/home';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import Navbar from "./Navbar";
+import Home from "./pages/home";
+import Services from "./pages/services";
 
-class Markup extends Component{
-	render(){
-		return(
-			<BrowserRouter basename="/">
-                <div className="page-wraper">
-                    <Switch>
-                        <Route path='/' exact component={Home} />
-                        <Route path='/blogs' exact component={Service} />				
-					          </Switch>
-                </div>
-				<ScrollToTop />
-				<ThemeButton />
-      </BrowserRouter>	
-		)
-	}
-	
+export default function Markup() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navbar />}/>
+        <Route index element={<Home/>} />
+		<Route path="services" element={<Services/>} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default Markup;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Markup />);
