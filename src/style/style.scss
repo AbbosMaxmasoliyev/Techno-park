@@ -131,16 +131,12 @@ overflow-x: hidden;
                 font-style: normal;
                 font-weight: 700;
                 font-size: 19.9174px;
-                line-height: 30px;
                 /* identical to box height */
 
                 text-transform: capitalize;
 
                 color: #FFFFFF;
                 box-sizing: border-box;
-
-
-
             }
 
             &>.title_image
@@ -749,7 +745,7 @@ overflow-x: hidden;
 .neon_button
 {
     height: 54px;
-    margin: 30px 0;
+    margin: 0px 0;
     border: 3.13px solid #678ff3 ;
     text-align: center;
     color: #fff;
@@ -762,7 +758,7 @@ overflow-x: hidden;
     font-style: normal;
     font-weight: 700;
     font-size: 24.1017px;
-    line-height: 41px;
+    // line-height: px;
     /* identical to box height */
 
     text-transform: uppercase;
@@ -772,5 +768,85 @@ overflow-x: hidden;
 
 
 }
+  
+
+.Block_right{
+    width: 100%;
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+
+    &>.left{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &>ul{
+            width: 100%;
+
+            &>li{
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 25px;
+                line-height: 40px;
+                /* or 158% */
+
+                font-feature-settings: 'liga' off;
+
+                color: #E5E5E5;
+                margin-left: 30px;
+            }
+        }
+
+    }
+    .right{
+        display: flex;
+        justify-content: right;
+        align-items: flex-start;
+    }
+}
+
+.Block_left{
+    margin: 35px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &>.right{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &>ul{
+            width: 100%;
+
+            &>li{
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 25px;
+                line-height: 40px;
+                /* or 158% */
+
+                font-feature-settings: 'liga' off;
+
+                color: #E5E5E5;
+                margin-left: 30px;
+            }
+        }
+
+    }
+    .left{
+        display: flex;
+        justify-content: right;
+        align-items: flex-start;
+    }
+}
+
 
 
