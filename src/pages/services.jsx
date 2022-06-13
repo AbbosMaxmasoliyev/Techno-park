@@ -11,7 +11,8 @@ import multikrobot from "../images/rasm/multikrobot.png"
 
 let lego_video = <iframe width="483" height="322" src="https://www.youtube.com/embed/amvhcedGlfk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>;
 let dizayn_video = <iframe width="483" height="322" src="https://www.youtube.com/embed/6OwijWVM-ww" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-
+// salom
+// salom
 const items = [
     {info: 'Kompyuter savodxonligi  '},
     {info: 'Blender'},
