@@ -9,14 +9,16 @@ const Block_left = (props) => {
             { props.video}
         </div>
         <div className="right">
-            <div className="neon_button">{props.title}</div>
-            <ul>
+            {props.video2 && <div>{props.video2}</div>}
+           {props.title && <div className="neon_button">{props.title}</div> } 
+            {props.mapqil && <ul>
             {
                 props.mapqil.map((index)=>(
                     <li key={index}>{index.info}</li>
                 ))
             }
-            </ul>
+            </ul>}
+            {props.image2 && <img src={props.image2} className="yutub"/>}
         </div>
     </div>
     </div>

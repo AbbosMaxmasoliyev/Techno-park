@@ -4,18 +4,19 @@ const Block_right = (props) => {
   return (
     <div className='Block_right'>
         <div className="left">
-            <div className="neon_button">{props.title}</div>
-            <ul>
+            {props.title && <div className="neon_button">{props.title}</div>}
+            {props.mapqil && <ul>
             {
                 props.mapqil.map((index)=>(
                     <li key={index}>{index.info}</li>
                 ))
             }
-            </ul>
+            </ul>}
+            {props.rasm && <img src={props.rasm}/>}
         </div>
         <div className="right">
             {props.image && <img src={props.image}/>}
-            { props.video}
+            { props.video && <div>{props.video}</div>}
         </div>
     </div>
   )

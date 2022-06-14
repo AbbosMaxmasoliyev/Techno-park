@@ -806,8 +806,19 @@ overflow-x: hidden;
         display: flex;
         justify-content: right;
         align-items: flex-start;
+
+        &>div{
+            align-self: center;
+            justify-self: center;
+        }
     }
 }
+
+
+
+
+
+
 
 .Block_left{
     margin: 35px 0;
@@ -815,8 +826,14 @@ overflow-x: hidden;
     display: flex;
     justify-content: space-between;
 
+
+    &>.yutub{
+        align-self: center;
+        justify-self: center;
+    }
     &>.right{
         width: 50%;
+        height: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -842,10 +859,52 @@ overflow-x: hidden;
 
     }
     .left{
+        height: 100%;
         display: flex;
         justify-content: right;
         align-items: flex-start;
+        align-self: center;
     }
+}
+
+
+
+.services .block{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &>img{
+        height: auto;
+    }
+}
+
+
+
+
+.back{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &>p{
+        width: 100%;
+        padding:0 20%;
+        font-family: 'Righteous';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 45.0866px;
+        line-height: 63px;
+        text-align: center;
+        font-feature-settings: 'liga' off;
+
+        color: #FFFFFF;
+    }
+    
 }
 
 
