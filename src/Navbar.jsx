@@ -20,10 +20,10 @@ class Navbar extends Component {
               </div>
               <div className="links">
               <Link to={'/'} className="dez-page site-button primary">Biz haqimizda</Link>
-              <Link to={'/courses'} className="dez-page site-button primary">Kurslarimiz</Link>
-              <Link to={'/services'} className="dez-page site-button primary">Xizmatlarimiz</Link>
+              <Link to={'/services'} className="dez-page site-button primary">Kurslarimiz</Link>
+              <Link to={'/service'} className="dez-page site-button primary">Xizmatlarimiz</Link>
               <Link to={'/news'} className="dez-page site-button primary">Yangiliklar</Link>
-              <Link to={'/contact'} className="dez-page site-button primary">Yangiliklar</Link>
+              <Link to={'/contact'} className="dez-page site-button primary">Aloqa</Link>
               </div>
             </div >
         )

@@ -12,7 +12,6 @@ import odam from "../images/odam.png"
 import Partners from '../components/partners'
 import MyForm from '../components/form'
 import Form from '../components/form'
-import main from "../components/main"
 import Google from '../components/google'
 import Footer from '../components/footer'
 import Navbar from '../Navbar'
@@ -39,10 +38,7 @@ const Home = () => {
       </div>
       <Partners/>
       <img src={odam} alt="" width={"90%"} style={{ alignSelf:"center", margin:"2% 0"}}/>
-      {/* <Form/> */}
-      <script src={main}></script>
-      {/* salom */}
-      {/* salom */}
+      <Form/>
       <Google/>
       <Footer/>
     </div>

@@ -10,8 +10,8 @@ const Banner2 = (props) => {
             </div>
             <ul>
             {
-                props.mapqil.map((index)=>(
-                    <li key={index}>{index.info}</li>
+                props.mapqil.map((index,item)=>(
+                    <li key={item.toString()}>{index.info}</li>
                 ))
             }
             </ul>

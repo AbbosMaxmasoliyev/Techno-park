@@ -8,6 +8,7 @@ import Youtube from "../images/icons/youtube.png"
 import Instagram from "../images/icons/instagram.png"
 import Telegram from "../images/icons/telegram.png"
 import Facebook from "../images/icons/facebook.png"
+import Google from './google';
 
 const Footer = () => {
   return (

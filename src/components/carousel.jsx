@@ -11,14 +11,11 @@ let slides = [
 
 
 
-const callback = function(index){
-        console.log("callback",index);
-    }
 
 const Carousel1 = () => {
   return (
     <div className='carusel'>
-      <Carousel slides={slides} autoplay={false} interval={1500} onSlideChange={callback}/>
+      <Carousel slides={slides} autoplay={false} interval={1500} />
       <img src={circle} alt="" />
     </div>
   )

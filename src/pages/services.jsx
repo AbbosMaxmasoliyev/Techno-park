@@ -5,6 +5,9 @@ import aylan from "../images/background/service.png"
 import aylana from "../images/background/aylana.png"
 import Block_right from '../components/Block_right';
 import Block_left from '../components/Block_left';
+import Google from '../components/google';
+import Footer from '../components/footer';
+import Form from '../components/form';
 
 import first from "../images/rasm/first.png"
 import multikrobot from "../images/rasm/multikrobot.png"
@@ -13,6 +16,9 @@ import matn from "../images/rasm/matn.png"
 import stark from "../images/rasm/stark.png"
 import olimjon from "../images/olimjon.png"
 import smm_rasm from "../images/smm.png"
+import looper from "../images/looper.png"
+import tahlilchi from "../images/tahlilchi.png"
+
 
 // caruselmas image
 import rasm1 from "../images/caruselmas/1.png"
@@ -20,8 +26,7 @@ import rasm2 from "../images/caruselmas/2.png"
 import rasm3 from "../images/caruselmas/3.png"
 import rasm4 from "../images/caruselmas/4.png"
 import rasm5 from "../images/caruselmas/5.png"
-import Google from '../components/google';
-import Footer from '../components/footer';
+
 
 
 
@@ -52,7 +57,6 @@ const items = [
 
 const computer = [
   {info:`Kompyuter haqida boshlang’ich bilimlar.`},
-  {info:`Kompyuterning muhim qurilmalari  va asosiy dasturlari.`},
   {info:`Office dasturlari ( Word, Excel, Power Point ) `},
   {info:`Brauzerlar bilan ishlash.`},
   {info:`Himoya dasturlar bilan ishlash va h.k`},
@@ -61,7 +65,6 @@ const computer = [
 ]
 
 const lego = [
-  {info:`Texnologiya: `},
   {info:`Lego Mindstorm`},
   {info:`Bloklar yordamida dasturlash `},
   {info:`Tartibi: Haftada 3 kun 2 soatdan`},
@@ -69,7 +72,6 @@ const lego = [
 ]
 
 const robotexnika=[
-  {info:`Texnologiyalar: `},
   {info:`Elektronika`},
   {info:`Mikroprotsessorli dasturlash (Arduino kids)`},
   {info:`Dasturlash (Algoritmlash)`},
@@ -79,7 +81,6 @@ const robotexnika=[
 ]
 
 const dizayn = [
-  {info: `Texnologiyalar: `},
   {info: `Adobe Photoshop`},
   {info: `Adobe Illustrator`},
   {info: `Corel draw `},
@@ -89,7 +90,6 @@ const dizayn = [
 ]
 
 const montaj = [
-  {info:`Texnologiyalar: `},
   {info:`Adobe Photoshop`},
   {info:`Adobe Illustrator`},
   {info:`Adobe After Effect`},
@@ -99,7 +99,7 @@ const montaj = [
 ]
 
 const d3max = [
-  {info:`3D s max dasturi: `},
+  {info:`3D s max dasturi`},
   {info:`Uyning ichki va tashqi dizaynlar qilish`},
   {info:`Animatsion   roliklar`},
   {info:`Uy jihozlarini yasash`},
@@ -108,12 +108,10 @@ const d3max = [
 ]
 
 const web = [
-  {info:`HTML`},
-  {info:`CSS`},
+  {info:`HTML / CSS`},
   {info:`JavaScript`},
   {info:`Bootstrap`},
-  {info:`Python`},
-  {info:`Django`},
+  {info:`Python / Django`},
   {info:`SQL / Posgress SQL`},
   {info:`Data Base`},
   {info:`Tartibi: Haftada 3 kun 2 soatdan`},
@@ -121,7 +119,6 @@ const web = [
 ]
 
 const bloger = [
-  {info: `Texnologiyalar: `},
   {info: `Blogerlik sirlari`},
   {info: `You Tube  bilan ishlash`},
   {info: `Video montaj`},
@@ -189,6 +186,11 @@ const Services = () => {
         <Block_right title="SMM menejer" mapqil={smm } image={smm_rasm}/>
         <Block_left title="Blender & Cinema 4D" mapqil={blender} video={cinema}/>
         <Block_right title="Aviasport bolalar uchun" mapqil={avia}video={aviasport}/>
+        <div className="block">
+        <img src={tahlilchi} alt="" />
+          <img src={looper} alt="" />
+        </div>
+        <Form/>
         <Google/>
         <Footer/>
     </div>
