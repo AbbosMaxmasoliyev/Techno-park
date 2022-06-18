@@ -93,7 +93,7 @@ overflow-x: hidden;
 
     &>.banner
     {
-        width: 66.6%;
+        width:100%;
         display: flex;
         justify-content: space-between;
 
@@ -333,7 +333,7 @@ overflow-x: hidden;
 
 .expertise
 {
-    width: 750px;
+    width: 600px;
     height: 250px;
     display: flex;
     justify-content: space-between;
@@ -408,8 +408,10 @@ overflow-x: hidden;
 
 .expertise_block
 {
+    width: 100%;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 
 
     &>.left{
@@ -597,13 +599,22 @@ overflow-x: hidden;
     flex-direction: column;
     text-align: center;
 
-   &>div{
+   &>.google_block
+   {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    &>.map{
+        width: 45%;
         display: flex;
         justify-content: space-between;
         &>iframe
         {
             border-radius: 10px;
         }
+   }
    }
    &>.title{
     font-family: 'Righteous';
@@ -744,6 +755,8 @@ overflow-x: hidden;
 
 .neon_button
 {
+    max-width: max-content;
+    padding: 0px 50px;
     height: 54px;
     margin: 0px 0;
     border: 3.13px solid #678ff3 ;
@@ -762,7 +775,6 @@ overflow-x: hidden;
     /* identical to box height */
 
     text-transform: uppercase;
-    padding: 0 10px;
 
     color: #FFFFFF;
 
@@ -968,11 +980,11 @@ font-feature-settings: 'liga' off;
 color: #E5E5E5;
 }
 
-.service_block .log .neon_button
-{
-    max-width: 80%;
-    padding: 0 30px;
-}
+// .service_block .log .neon_button
+// {
+//     max-width: 80%;
+//     padding: 0 30px;
+// }
 
 .log .urta{
     width: 50%;
@@ -1362,3 +1374,51 @@ color: #E5E5E5;
         margin: 50px 0;
     }
 }
+
+@media only screen and (max-width:1439px) {
+    .home{
+        border: 1px solid blue;
+    }
+
+    #gif{
+        width: 1439px;
+        margin-left: -5%;
+    }
+    .expertise
+{
+    width: 950px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    &>.block{
+
+        width: 455px;
+        height: 210px;}
+    }
+}
+
+
+@media only screen and (max-width:1600px) {
+    .home{
+        width: 90%;
+        overflow-x: visible;
+    }
+
+    #gif{
+        
+        width: 1599px; 
+        align-items: center;
+        z-index: 3;
+        &>p{
+            text-align: center;
+        }
+    }
+
+    
+    
+   
+}
+

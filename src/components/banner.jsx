@@ -28,7 +28,6 @@ const Banner = () => {
         <img src={shar1} className="shar4" />
         <img src={shar1} className="shar5" />
         <img src={shar1} className="shar6" />
-        <img src={sfera} className="shar7" />
 
         </div>
     </div>
